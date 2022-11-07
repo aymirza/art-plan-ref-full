@@ -1,0 +1,8 @@
+
+use artrefplan;
+
+select * from oylik_plan;
+select sum(quantity) from oylik_plan;
+
+SELECT sum(quantity) FROM oylik_plan WHERE shipment='Tojik Ex'
+                and MONTH(plan_date) = 6 AND YEAR(plan_date) = 2022;
